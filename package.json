@@ -4,7 +4,7 @@
   "author": "mocheer",
   "main": "index.js",
   "license": "MIT",
-  "description": "assistant for webpack",
+  "description": "assistant of webpack",
   "repository": {
     "type": "git",
     "url": "https://github.com/mocheer/assistant-webpack.git"

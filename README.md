@@ -1,2 +1,2 @@
 # assistant-webpack
-assistant for webpack
+assistant of webpack

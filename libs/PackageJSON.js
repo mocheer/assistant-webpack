@@ -4,8 +4,8 @@
  * @param date 2017.4.7
  */
 var packageFile = process.cwd() + '/package.json';
-var packageJson = require(packageFile)
-packageJson.toBanner = options => {
+var PackageJSON = require(packageFile)
+PackageJSON.toBanner = options => {
     options = options || ["name", "description", "version", "author", "license"]
     var str = ''
     for (var i = 0, l = options.length; i < l; i++) {
@@ -13,8 +13,8 @@ packageJson.toBanner = options => {
         if (str !== '') {
             str += '\n';
         }
-        packageJson[k] && (str += k + ':' + packageJson[k])
+        PackageJSON[k] && (str += k + ':' + PackageJSON[k])
     }
     return str
 }
-module.exports = packageJson;
+module.exports = PackageJSON;
